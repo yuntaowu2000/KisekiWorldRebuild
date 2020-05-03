@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Liberl/Bose.unity
+    guid: c752a6708125c0d499d563cd2e14b3a8
+  - enabled: 1
+    path: Assets/Scenes/Liberl/Grancel.unity
+    guid: 7e30bfc4a180c4742a5e2ad7ccef151a
+  - enabled: 1
+    path: Assets/Scenes/Liberl/Rolent.unity
+    guid: 674e720c7bd71e44491f59425106d9ee
+  - enabled: 1
+    path: Assets/Scenes/Liberl/Ruan.unity
+    guid: 164ac7afbba34eb4388e2380a6f3f196
+  - enabled: 1
+    path: Assets/Scenes/Liberl/Zeiss.unity
+    guid: f1fffe1559e41fb489c1812b828f51ed
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Kreuzen/Bareahard.unity
+    guid: 138543bf1acf8c4449dc9e4b3e716435
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Capital/Heimdallr.unity
+    guid: 0f5fa31c24560f44f98a5473344b4cbd
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Kreuzen/Legram.unity
+    guid: 9a4ab549377243d40a0dbff1a7a8d5e6
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Nord.unity
+    guid: b3cbbf7aecb33d14794832499cad9132
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Nortia/Roer.unity
+    guid: e6d4c3991b1f6ac46b0b303762d4bb01
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Capital/Trista.unity
+    guid: 53c9f0d2cf7673349a6a117b1161f2dc
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Nortia/Ymir.unity
+    guid: 068d5a66dc333a64891d3b20e12b74ab
+  - enabled: 1
+    path: Assets/Scenes/Erebonia/Sutherland/Hamel.unity
+    guid: 75a172b23d09a4840bf1e48f66ce1f3c
+  m_configObjects: {}

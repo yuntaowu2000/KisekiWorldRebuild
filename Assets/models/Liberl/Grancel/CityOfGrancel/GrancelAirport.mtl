@@ -1,0 +1,181 @@
+# Exported from 3D Builder
+
+newmtl Mat_0
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0103.png
+
+newmtl Mat_1
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3201.png
+
+newmtl Mat_2
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0303.png
+
+newmtl Mat_3
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O2601.png
+
+newmtl Mat_4
+Kd 1.000000 1.000000 1.000000
+map_Kd T25O0901.png
+
+newmtl Mat_5
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2003.png
+
+newmtl Mat_6
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O2801.png
+
+newmtl Mat_7
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0403.png
+
+newmtl Mat_8
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2403.png
+
+newmtl Mat_9
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1503.png
+
+newmtl Mat_10
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1203.png
+
+newmtl Mat_11
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0803.png
+
+newmtl Mat_12
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O2901.png
+
+newmtl Mat_13
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0203.png
+
+newmtl Mat_14
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0603.png
+
+newmtl Mat_15
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0703.png
+
+newmtl Mat_16
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1903.png
+
+newmtl Mat_17
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3501.png
+
+newmtl Mat_18
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3101.png
+
+newmtl Mat_19
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1603.png
+
+newmtl Mat_20
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1303.png
+
+newmtl Mat_21
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1803.png
+
+newmtl Mat_22
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1003.png
+
+newmtl Mat_23
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0003.png
+
+newmtl Mat_24
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3401.png
+
+newmtl Mat_25
+Kd 1.000000 1.000000 1.000000
+map_Kd T01O1701.png
+
+newmtl Mat_26
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1103.png
+
+newmtl Mat_27
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O1301.png
+
+newmtl Mat_28
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2603.png
+
+newmtl Mat_29
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O2701.png
+
+newmtl Mat_30
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3301.png
+
+newmtl Mat_31
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3001.png
+
+newmtl Mat_32
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0503.png
+
+newmtl Mat_33
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O2401.png
+
+newmtl Mat_34
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2103.png
+
+newmtl Mat_35
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O0903.png
+
+newmtl Mat_36
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2203.png
+
+newmtl Mat_37
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1703.png
+
+newmtl Mat_38
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3601.png
+
+newmtl Mat_39
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2303.png
+
+newmtl Mat_40
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O0501.png
+
+newmtl Mat_41
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O2501.png
+
+newmtl Mat_42
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O1403.png
+
+newmtl Mat_43
+Kd 1.000000 1.000000 1.000000
+map_Kd T41O3801.png
+
+newmtl Mat_44
+Kd 1.000000 1.000000 1.000000
+map_Kd E03O2503.png
