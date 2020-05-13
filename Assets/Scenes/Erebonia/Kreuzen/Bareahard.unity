@@ -315,6 +315,11 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Celdic
       objectReference: {fileID: 0}
+    - target: {fileID: 3597281595487745653, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: destination
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7639637185881824049, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: m_LocalPosition.x

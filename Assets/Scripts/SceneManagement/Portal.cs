@@ -49,9 +49,11 @@ namespace Kiseki.SceneManagement {
         }
 
         private void UpdatePlayerTransform(Portal otherPortal) {
-            Transform player = GameObject.FindWithTag("Player").transform;
-            player.position = otherPortal.spawnPoint.position;
-            player.rotation = otherPortal.spawnPoint.rotation;
+            if (otherPortal != null) {
+                Transform player = GameObject.FindWithTag("Player").transform;
+                player.position = otherPortal.spawnPoint.position;
+                player.rotation = otherPortal.spawnPoint.rotation;
+            }
         }
     }
 }
