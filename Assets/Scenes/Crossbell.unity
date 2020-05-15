@@ -383,7 +383,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94c077c8a2677241aea4363e18a22ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainstationUI: {fileID: 7211243103149383136}
+  type: 1
+  destinationIdentifier: 0
+  sceneToLoad: 
+  transportationUI: {fileID: 7211243103149383136}
   cameraControl: {fileID: 1099979254}
   spawnPoint: {fileID: 1121570042660921735}
 --- !u!1 &898502517392058002
@@ -938,7 +941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -33458.98, y: 19491.578}
+  m_AnchoredPosition: {x: -35922.19, y: 20898.717}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &7211243102733313459
@@ -1329,7 +1332,7 @@ GameObject:
   - component: {fileID: 7211243103149383137}
   - component: {fileID: 7211243103149383138}
   m_Layer: 5
-  m_Name: TrainStationUI
+  m_Name: TransportationUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

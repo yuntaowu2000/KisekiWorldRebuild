@@ -497,9 +497,14 @@ PrefabInstance:
     - target: {fileID: 3189420119156902004, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: PortalToRoer
       objectReference: {fileID: 0}
     - target: {fileID: 3597281595487745653, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Roer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385817661238233109, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: sceneToLoad
       value: Roer

@@ -75,7 +75,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94c077c8a2677241aea4363e18a22ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trainstationUI: {fileID: 0}
+  type: 1
+  destinationIdentifier: 0
+  sceneToLoad: 
+  transportationUI: {fileID: 0}
   cameraControl: {fileID: 0}
   spawnPoint: {fileID: 3956259378047211970}
 --- !u!1 &7541058421996171819

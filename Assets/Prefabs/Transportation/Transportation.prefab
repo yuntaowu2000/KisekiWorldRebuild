@@ -225,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 6729663819105573227, guid: a01a5fe771cf207439b89b75f378b080,
         type: 3}
       propertyPath: m_Name
-      value: TrainStationUI
+      value: TransportationUI
       objectReference: {fileID: 0}
     - target: {fileID: 6729663819385254946, guid: a01a5fe771cf207439b89b75f378b080,
         type: 3}

@@ -350,7 +350,7 @@ PrefabInstance:
     - target: {fileID: 3189420119156902004, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: m_Name
-      value: Portal (2)
+      value: PortalToBareahard
       objectReference: {fileID: 0}
     - target: {fileID: 3597281595487745653, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
@@ -361,6 +361,16 @@ PrefabInstance:
         type: 3}
       propertyPath: destination
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385817661238233109, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: destinationIdentifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385817661238233109, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Bareahard
       objectReference: {fileID: 0}
     - target: {fileID: 7639637185881824049, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
@@ -661,12 +671,12 @@ PrefabInstance:
     - target: {fileID: 7211243103575649127, guid: da0c1f9134cbf3043a427e6e48ae056e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -33861.53
+      value: -40582.957
       objectReference: {fileID: 0}
     - target: {fileID: 7211243103575649127, guid: da0c1f9134cbf3043a427e6e48ae056e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 19760.498
+      value: 24012.41
       objectReference: {fileID: 0}
     - target: {fileID: 7211243103640135969, guid: da0c1f9134cbf3043a427e6e48ae056e,
         type: 3}
@@ -798,9 +808,14 @@ PrefabInstance:
     - target: {fileID: 3189420119156902004, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: m_Name
-      value: Portal
+      value: PortalToTrista
       objectReference: {fileID: 0}
     - target: {fileID: 3597281595487745653, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Trista
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385817661238233109, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: sceneToLoad
       value: Trista
@@ -877,7 +892,7 @@ PrefabInstance:
     - target: {fileID: 3189420119156902004, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
       propertyPath: m_Name
-      value: Portal (1)
+      value: PortalToGarrelia
       objectReference: {fileID: 0}
     - target: {fileID: 3597281595487745653, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
@@ -888,6 +903,16 @@ PrefabInstance:
         type: 3}
       propertyPath: destination
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385817661238233109, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: destinationIdentifier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385817661238233109, guid: 4c5b9f161afd69547b42a78d16c0e60b,
+        type: 3}
+      propertyPath: sceneToLoad
+      value: Garrelia
       objectReference: {fileID: 0}
     - target: {fileID: 7639637185881824049, guid: 4c5b9f161afd69547b42a78d16c0e60b,
         type: 3}
@@ -963,6 +988,16 @@ PrefabInstance:
       propertyPath: cameraControl
       value: 
       objectReference: {fileID: 600902089}
+    - target: {fileID: 3823544766109015764, guid: 48bc9b644f6a48245a0dac5229779108,
+        type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823544766109015764, guid: 48bc9b644f6a48245a0dac5229779108,
+        type: 3}
+      propertyPath: transportationUI
+      value: 
+      objectReference: {fileID: 1258886124}
     - target: {fileID: 3823544766109015767, guid: 48bc9b644f6a48245a0dac5229779108,
         type: 3}
       propertyPath: m_Name

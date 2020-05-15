@@ -439,12 +439,12 @@ PrefabInstance:
     - target: {fileID: 7211243103575649127, guid: da0c1f9134cbf3043a427e6e48ae056e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.00000047683716
+      value: -4.772464
       objectReference: {fileID: 0}
     - target: {fileID: 7211243103575649127, guid: da0c1f9134cbf3043a427e6e48ae056e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.00017193107
+      value: -0.000007798824
       objectReference: {fileID: 0}
     - target: {fileID: 7211243103575649127, guid: da0c1f9134cbf3043a427e6e48ae056e,
         type: 3}
@@ -723,6 +723,16 @@ PrefabInstance:
       propertyPath: cameraControl
       value: 
       objectReference: {fileID: 595476476}
+    - target: {fileID: 3823544766109015764, guid: 48bc9b644f6a48245a0dac5229779108,
+        type: 3}
+      propertyPath: type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823544766109015764, guid: 48bc9b644f6a48245a0dac5229779108,
+        type: 3}
+      propertyPath: transportationUI
+      value: 
+      objectReference: {fileID: 546947973}
     - target: {fileID: 3823544766109015767, guid: 48bc9b644f6a48245a0dac5229779108,
         type: 3}
       propertyPath: m_Name

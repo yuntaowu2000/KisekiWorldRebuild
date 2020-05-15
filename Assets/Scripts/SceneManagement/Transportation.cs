@@ -7,25 +7,38 @@ using UnityEngine.EventSystems;
 using Kiseki.Core;
 
 namespace Kiseki.SceneManagement {
-    public class TrainStation : MonoBehaviour
+    public class Transportation : MonoBehaviour
     {
         // Start is called before the first frame update
-        string sceneToLoad;
-        [SerializeField] Canvas trainstationUI;
+        enum Type {Airport, TrainStation, Portal};
+        enum DestinationIdentifier {A, B, C, D, E, F, G};
+
+        [SerializeField] Type type;
+        [SerializeField] DestinationIdentifier destinationIdentifier;
+        [SerializeField] string sceneToLoad;
+        [SerializeField] Canvas transportationUI;
         [SerializeField] FollowCamera cameraControl;
 
         [SerializeField] Transform spawnPoint;
         void Start()
-        {
-            trainstationUI.enabled = false;
+        {   
+            if (transportationUI != null) 
+            {
+                transportationUI.enabled = false;
+            }
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape) && trainstationUI.enabled == true) {
-                trainstationUI.enabled = false;
+            if (transportationUI != null) 
+            {
+                if (Input.GetKeyDown(KeyCode.Escape) && transportationUI.enabled == true) 
+                {
+                    transportationUI.enabled = false;
+                }
             }
+
         }
 
         void OnTriggerEnter(Collider other) {
@@ -39,14 +52,20 @@ namespace Kiseki.SceneManagement {
 
         private void SetUI() {
             //enable/disable the UI to select destination
-            trainstationUI.enabled = !trainstationUI.enabled;
+            if (transportationUI != null) 
+            {
+                transportationUI.enabled = !transportationUI.enabled;
+            }
         }
 
         private void SetCameraStatus() {
             //set the camera/cursor to disabled if the camera/cursor is enabled
             //set the camera/cursor to enabled if the camera/cursor is disabled
-            cameraControl.enabled = !cameraControl.enabled;
-            Cursor.visible = !Cursor.visible;
+            if (cameraControl != null) 
+            {
+                cameraControl.enabled = !cameraControl.enabled;
+                Cursor.visible = !Cursor.visible;
+            }
         }
         
         public void SetDestination() {
@@ -56,30 +75,30 @@ namespace Kiseki.SceneManagement {
 
         private IEnumerator Transport() {
             DontDestroyOnLoad(this.gameObject);
-            while (sceneToLoad == null) {
+            while (sceneToLoad == null || sceneToLoad == "") {
                 yield return null;
             }
             Debug.Log(sceneToLoad);
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
-            TrainStation otherStation = GetDestStation();
-            UpdatePlayerTransform(otherStation);
+            Transportation other = GetDestStation();
+            UpdatePlayerTransform(other);
             Destroy(this.gameObject);
         }
 
-        private TrainStation GetDestStation() {
-            TrainStation[] portals = FindObjectsOfType<TrainStation>();
-            foreach (TrainStation p in portals) {
-                if (p == this) continue;
+        private Transportation GetDestStation() {
+            Transportation[] portals = FindObjectsOfType<Transportation>();
+            foreach (Transportation p in portals) {
+                if (p == this || p.type != this.type || p.destinationIdentifier != this.destinationIdentifier) continue;
                 return p;
             }
             return null;
         }
 
-        private void UpdatePlayerTransform(TrainStation otherStation) {
-            if (otherStation != null) {
+        private void UpdatePlayerTransform(Transportation other) {
+            if (other != null) {
                 Transform player = GameObject.FindWithTag("Player").transform;
-                player.position = otherStation.spawnPoint.position;
-                player.rotation = otherStation.spawnPoint.rotation;
+                player.position = other.spawnPoint.position;
+                player.rotation = other.spawnPoint.rotation;
             }
         }
 
