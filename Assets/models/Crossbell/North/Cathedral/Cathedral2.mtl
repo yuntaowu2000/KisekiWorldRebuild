@@ -1,0 +1,81 @@
+# Exported from 3D Builder
+
+newmtl Mat_0
+Kd 1.000000 1.000000 1.000000
+map_Kd t404gr00.png
+
+newmtl Mat_1
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ro01.png
+
+newmtl Mat_2
+Kd 1.000000 1.000000 1.000000
+map_Kd t404wa00.png
+
+newmtl Mat_3
+Kd 1.000000 1.000000 1.000000
+map_Kd t404wa01.png
+
+newmtl Mat_4
+Kd 1.000000 1.000000 1.000000
+map_Kd t404wa02.png
+
+newmtl Mat_5
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob00.png
+
+newmtl Mat_6
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob01.png
+
+newmtl Mat_7
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob02.png
+
+newmtl Mat_8
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob03.png
+
+newmtl Mat_9
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob07.png
+
+newmtl Mat_10
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob10.png
+
+newmtl Mat_11
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob11.png
+
+newmtl Mat_12
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob12.png
+
+newmtl Mat_13
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ob09.png
+
+newmtl Mat_14
+Kd 1.000000 1.000000 1.000000
+map_Kd t404ro03.png
+
+newmtl Mat_15
+Kd 1.000000 1.000000 1.000000
+map_Kd t404pl01.png
+
+newmtl Mat_16
+Kd 1.000000 1.000000 1.000000
+map_Kd t404pl00.png
+
+newmtl Mat_17
+Kd 1.000000 1.000000 1.000000
+map_Kd t404pl03.png
+
+newmtl Mat_18
+Kd 1.000000 1.000000 1.000000
+map_Kd t404pl05.png
+
+newmtl Mat_19
+Kd 1.000000 1.000000 1.000000
+map_Kd t404blac.png

@@ -1,0 +1,101 @@
+# Exported from 3D Builder
+
+newmtl Mat_0
+Kd 1.000000 1.000000 1.000000
+map_Kd t252mh00.png
+
+newmtl Mat_1
+Kd 1.000000 1.000000 1.000000
+map_Kd t252wa01.png
+
+newmtl Mat_2
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ya01.png
+
+newmtl Mat_3
+Kd 1.000000 1.000000 1.000000
+map_Kd t252rl00.png
+
+newmtl Mat_4
+Kd 1.000000 1.000000 1.000000
+map_Kd t252kb01.png
+
+newmtl Mat_5
+Kd 1.000000 1.000000 1.000000
+map_Kd t252kb00.png
+
+newmtl Mat_6
+Kd 1.000000 1.000000 1.000000
+map_Kd t252wa03.png
+
+newmtl Mat_7
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ji09.png
+
+newmtl Mat_8
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ji00.png
+
+newmtl Mat_9
+Kd 1.000000 1.000000 1.000000
+map_Kd t252gr00.png
+
+newmtl Mat_10
+Kd 1.000000 1.000000 1.000000
+map_Kd t252gr01.png
+
+newmtl Mat_11
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ji05.png
+
+newmtl Mat_12
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ji04.png
+
+newmtl Mat_13
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ji08.png
+
+newmtl Mat_14
+Kd 1.000000 1.000000 1.000000
+map_Kd t252so00.png
+
+newmtl Mat_15
+Kd 1.000000 1.000000 1.000000
+map_Kd t252gr05.png
+
+newmtl Mat_16
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ob01.png
+
+newmtl Mat_17
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ih00.png
+
+newmtl Mat_18
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ob00.png
+
+newmtl Mat_19
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ma00.png
+
+newmtl Mat_20
+Kd 1.000000 1.000000 1.000000
+map_Kd t252am00.png
+
+newmtl Mat_21
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ji06.png
+
+newmtl Mat_22
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ks04.png
+
+newmtl Mat_23
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ks05.png
+
+newmtl Mat_24
+Kd 1.000000 1.000000 1.000000
+map_Kd t252ks03.png

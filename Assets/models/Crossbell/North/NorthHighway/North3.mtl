@@ -1,0 +1,61 @@
+# Exported from 3D Builder
+
+newmtl Mat_0
+Kd 1.000000 1.000000 1.000000
+map_Kd r205ob04.png
+
+newmtl Mat_1
+Kd 1.000000 1.000000 1.000000
+map_Kd r205ob05.png
+
+newmtl Mat_2
+Kd 1.000000 1.000000 1.000000
+map_Kd r205pl01.png
+
+newmtl Mat_3
+Kd 1.000000 1.000000 1.000000
+map_Kd r205pl02.png
+
+newmtl Mat_4
+Kd 1.000000 1.000000 1.000000
+map_Kd r205pl04.png
+
+newmtl Mat_5
+Kd 1.000000 1.000000 1.000000
+map_Kd r205pl05.png
+
+newmtl Mat_6
+Kd 1.000000 1.000000 1.000000
+map_Kd r205wa03.png
+
+newmtl Mat_7
+Kd 1.000000 1.000000 1.000000
+map_Kd r205wa04.png
+
+newmtl Mat_8
+Kd 1.000000 1.000000 1.000000
+map_Kd r205wa05.png
+
+newmtl Mat_9
+Kd 1.000000 1.000000 1.000000
+map_Kd r205wo02.png
+
+newmtl Mat_10
+Kd 1.000000 1.000000 1.000000
+map_Kd r205gr01.png
+
+newmtl Mat_11
+Kd 1.000000 1.000000 1.000000
+map_Kd r205gr02.png
+
+newmtl Mat_12
+Kd 1.000000 1.000000 1.000000
+map_Kd r205ro03.png
+
+newmtl Mat_13
+Kd 1.000000 1.000000 1.000000
+map_Kd r205ro04.png
+
+newmtl Mat_14
+Kd 1.000000 1.000000 1.000000
+map_Kd r205pl03.png

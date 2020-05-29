@@ -1,0 +1,69 @@
+# Exported from 3D Builder
+
+newmtl Mat_0
+Kd 1.000000 1.000000 1.000000
+map_Kd r306gak0.png
+
+newmtl Mat_1
+Kd 1.000000 1.000000 1.000000
+map_Kd r306jmn0.png
+
+newmtl Mat_2
+Kd 1.000000 1.000000 1.000000
+map_Kd r306kus0.png
+
+newmtl Mat_3
+Kd 1.000000 1.000000 1.000000
+map_Kd r306kus5.png
+
+newmtl Mat_4
+Kd 1.000000 1.000000 1.000000
+map_Kd r306bud0.png
+
+newmtl Mat_5
+Kd 1.000000 1.000000 1.000000
+map_Kd r306bud1.png
+
+newmtl Mat_6
+Kd 1.000000 1.000000 1.000000
+map_Kd r306bud2.png
+
+newmtl Mat_7
+Kd 1.000000 1.000000 1.000000
+map_Kd r306bud3.png
+
+newmtl Mat_8
+Kd 1.000000 1.000000 1.000000
+map_Kd r306gak1.png
+
+newmtl Mat_9
+Kd 1.000000 1.000000 1.000000
+map_Kd r306obj0.png
+
+newmtl Mat_10
+Kd 1.000000 1.000000 1.000000
+map_Kd r306rod0.png
+
+newmtl Mat_11
+Kd 1.000000 1.000000 1.000000
+map_Kd r306rod1.png
+
+newmtl Mat_12
+Kd 1.000000 1.000000 1.000000
+map_Kd r306wod0.png
+
+newmtl Mat_13
+Kd 1.000000 1.000000 1.000000
+map_Kd r306wod2.png
+
+newmtl Mat_14
+Kd 1.000000 1.000000 1.000000
+map_Kd r306wod1.png
+
+newmtl Mat_15
+Kd 1.000000 1.000000 1.000000
+map_Kd r306wod3.png
+
+newmtl Mat_16
+Kd 1.000000 1.000000 1.000000
+map_Kd r306miz0.png
