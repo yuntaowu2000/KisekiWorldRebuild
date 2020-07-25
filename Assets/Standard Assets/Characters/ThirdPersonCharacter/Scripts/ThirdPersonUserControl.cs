@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.AI;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
@@ -13,7 +14,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
 
-        
+        [SerializeField] float maxNavPathLength = 20f;
         private void Start()
         {
             // get the transform of the main camera
@@ -70,6 +71,31 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
+            // NavMeshMove();
+        }
+
+        void NavMeshMove() {
+            if (CanMoveTo(m_Move))
+            GetComponent<NavMeshAgent>().SetDestination(m_Move);
+        }
+        public bool CanMoveTo(Vector3 destination)
+        {
+            NavMeshPath path = new NavMeshPath();
+            bool hasPath = NavMesh.CalculatePath(transform.position, destination, NavMesh.AllAreas, path);
+            if (!hasPath) return false;
+            if (path.status != NavMeshPathStatus.PathComplete) return false;
+            if (GetPathLength(path) > maxNavPathLength) return false;
+            return true;
+        }
+
+        private float GetPathLength(NavMeshPath path) {
+            Vector3[] corners = path.corners;
+            float length = 0;
+            if (corners.Length <= 1) return 0;
+            for(int i = 0; i < corners.Length - 1; i++) {
+                length += Vector3.Distance(corners[i], corners[i + 1]);
+            }
+            return length;
         }
     }
 }

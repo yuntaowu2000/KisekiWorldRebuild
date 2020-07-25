@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.ThirdPerson;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using Kiseki.Core;
@@ -10,7 +11,7 @@ namespace Kiseki.SceneManagement {
     public class Transportation : MonoBehaviour
     {
         // Start is called before the first frame update
-        enum Type {Airport, TrainStation, Portal};
+        enum Type {Airport, TrainStation, Portal, InScenePortal};
         enum DestinationIdentifier {A, B, C, D, E, F, G};
 
         [SerializeField] Type type;
@@ -46,7 +47,18 @@ namespace Kiseki.SceneManagement {
                 Debug.Log("Player entered");
                 SetUI();
                 SetCameraStatus();
-                StartCoroutine(Transport());
+                if (type == Type.InScenePortal)
+                {
+                    other.GetComponent<Collider>().enabled = false;
+                    other.GetComponent<ThirdPersonUserControl>().enabled = false;
+                    Transportation otherPortal = GetDestStation();
+                    UpdatePlayerTransform(otherPortal);
+                    other.GetComponent<Collider>().enabled = true;
+                    other.GetComponent<ThirdPersonUserControl>().enabled = true;
+                } else {
+                    StartCoroutine(Transport());
+                }
+
             }
         }
 
@@ -88,7 +100,10 @@ namespace Kiseki.SceneManagement {
         private Transportation GetDestStation() {
             Transportation[] portals = FindObjectsOfType<Transportation>();
             foreach (Transportation p in portals) {
-                if (p == this || p.type != this.type || p.destinationIdentifier != this.destinationIdentifier) continue;
+                if (p.gameObject == this.gameObject 
+                || p.type != this.type 
+                || p.destinationIdentifier != this.destinationIdentifier) continue;
+                
                 return p;
             }
             return null;
