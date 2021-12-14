@@ -81,6 +81,8 @@ MonoBehaviour:
   transportationUI: {fileID: 0}
   cameraControl: {fileID: 0}
   spawnPoint: {fileID: 3435008425403109217}
+  playerPrefab: {fileID: 2537600761201741032, guid: 497db9aef79dbe34797dfe76009a5c38,
+    type: 3}
 --- !u!1 &8208889671646913672
 GameObject:
   m_ObjectHideFlags: 0

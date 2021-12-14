@@ -22,31 +22,31 @@ namespace Kiseki.Core {
             Camera.main.fieldOfView = 40f;
         }
 
-        // Update is called once per frame
-        private void Update()
-        {   
-            Cursor.visible = false;
-            currentX += Input.GetAxis("Mouse X") * degree;
-            currentY += Input.GetAxis("Mouse Y") * degree;
-            currentY = Mathf.Clamp(currentY, minYangle, maxYangle);
-        }
-        void LateUpdate()
-        {
-            transform.position = target.transform.position;
-            RotateCamera();
-            ZoomCamera();
-        }
+        // // Update is called once per frame
+        // private void Update()
+        // {   
+        //     Cursor.visible = false;
+        //     currentX += Input.GetAxis("Mouse X") * degree;
+        //     currentY += Input.GetAxis("Mouse Y") * degree;
+        //     currentY = Mathf.Clamp(currentY, minYangle, maxYangle);
+        // }
+        // void LateUpdate()
+        // {
+        //     transform.position = target.transform.position;
+        //     RotateCamera();
+        //     ZoomCamera();
+        // }
 
-        private void RotateCamera()
-        {
-            transform.rotation = Quaternion.Euler(currentY, currentX, 0);
-        }
+        // private void RotateCamera()
+        // {
+        //     transform.rotation = Quaternion.Euler(currentY, currentX, 0);
+        // }
 
-        private void ZoomCamera()
-        {
-            float fov = Camera.main.fieldOfView - Input.GetAxis("Mouse ScrollWheel") * sensitivity;
-            Camera.main.fieldOfView = Mathf.Clamp(fov, minFOV, maxFOV);
-        }
+        // private void ZoomCamera()
+        // {
+        //     float fov = Camera.main.fieldOfView - Input.GetAxis("Mouse ScrollWheel") * sensitivity;
+        //     Camera.main.fieldOfView = Mathf.Clamp(fov, minFOV, maxFOV);
+        // }
 
     }
 }

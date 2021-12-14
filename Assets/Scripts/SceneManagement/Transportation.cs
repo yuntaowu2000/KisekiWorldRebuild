@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityStandardAssets.Characters.ThirdPerson;
+using StarterAssets;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using Kiseki.Core;
+using UnityEngine.InputSystem;
 
 namespace Kiseki.SceneManagement {
     public class Transportation : MonoBehaviour
@@ -18,11 +19,15 @@ namespace Kiseki.SceneManagement {
         [SerializeField] DestinationIdentifier destinationIdentifier;
         [SerializeField] string sceneToLoad;
         [SerializeField] Canvas transportationUI;
-        [SerializeField] FollowCamera cameraControl;
+        ThirdPersonController cameraControl;
 
         [SerializeField] Transform spawnPoint;
+        [SerializeField] GameObject playerPrefab;
         void Start()
         {   
+            if (cameraControl == null) {
+                cameraControl = FindObjectOfType<ThirdPersonController>();
+            }
             if (transportationUI != null) 
             {
                 transportationUI.enabled = false;
@@ -34,7 +39,7 @@ namespace Kiseki.SceneManagement {
         {
             if (transportationUI != null) 
             {
-                if (Input.GetKeyDown(KeyCode.Escape) && transportationUI.enabled == true) 
+                if (Keyboard.current.escapeKey.isPressed && transportationUI.enabled == true) 
                 {
                     transportationUI.enabled = false;
                 }
@@ -49,12 +54,12 @@ namespace Kiseki.SceneManagement {
                 SetCameraStatus();
                 if (type == Type.InScenePortal)
                 {
-                    other.GetComponent<Collider>().enabled = false;
-                    other.GetComponent<ThirdPersonUserControl>().enabled = false;
+                    other.GetComponentInChildren<Collider>().enabled = false;
+                    other.GetComponentInChildren<ThirdPersonController>().enabled = false;
                     Transportation otherPortal = GetDestStation();
                     UpdatePlayerTransform(otherPortal);
-                    other.GetComponent<Collider>().enabled = true;
-                    other.GetComponent<ThirdPersonUserControl>().enabled = true;
+                    other.GetComponentInChildren<Collider>().enabled = true;
+                    other.GetComponentInChildren<ThirdPersonController>().enabled = true;
                 } else {
                     StartCoroutine(Transport());
                 }
@@ -76,7 +81,11 @@ namespace Kiseki.SceneManagement {
             if (cameraControl != null) 
             {
                 cameraControl.enabled = !cameraControl.enabled;
-                Cursor.visible = !Cursor.visible;
+                if (Cursor.lockState == CursorLockMode.Locked) {
+                    Cursor.lockState = CursorLockMode.None;
+                } else {
+                    Cursor.lockState = CursorLockMode.Locked;
+                }
             }
         }
         
@@ -90,6 +99,7 @@ namespace Kiseki.SceneManagement {
             while (sceneToLoad == null || sceneToLoad == "") {
                 yield return null;
             }
+            if (sceneToLoad == "Crossbell") sceneToLoad = "NewCrossbell";
             Debug.Log(sceneToLoad);
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
             Transportation other = GetDestStation();
@@ -111,9 +121,13 @@ namespace Kiseki.SceneManagement {
 
         private void UpdatePlayerTransform(Transportation other) {
             if (other != null) {
-                Transform player = GameObject.FindWithTag("Player").transform;
-                player.position = other.spawnPoint.position;
-                player.rotation = other.spawnPoint.rotation;
+                GameObject player = GameObject.FindWithTag("Player");
+                if (player == null) {
+                    player = Instantiate(playerPrefab, other.spawnPoint.position, other.spawnPoint.rotation);
+                } else {
+                    player.transform.position = other.spawnPoint.position;
+                    player.transform.rotation = other.spawnPoint.rotation;
+                }
             }
         }
 
