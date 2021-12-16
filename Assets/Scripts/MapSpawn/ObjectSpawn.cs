@@ -6,16 +6,17 @@ public class ObjectSpawn : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] public string map_asset;
+    GameObject instantiatedObj = null;
 
-    void Start()
-    {
+    public void Spawn() {
         GameObject obj = Resources.Load<GameObject>(string.Format("Models/{0}", map_asset));
-        Instantiate(obj, this.transform);
+        instantiatedObj = Instantiate(obj, this.transform);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void DestroyChild() {
+        if (instantiatedObj != null) {
+            Destroy(instantiatedObj);
+            instantiatedObj = null;
+        }
     }
 }

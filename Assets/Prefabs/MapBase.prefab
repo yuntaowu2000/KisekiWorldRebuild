@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8373958208604554160}
   - component: {fileID: 8373958208604554161}
+  - component: {fileID: 8014799623141213805}
   m_Layer: 0
   m_Name: MapBase
   m_TagString: Untagged
@@ -48,3 +49,16 @@ MonoBehaviour:
   finished: 0
   objectSpawner: {fileID: 6073101721155292780, guid: 6961636be885b5c4fa7962203766d9a8,
     type: 3}
+--- !u!114 &8014799623141213805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373958208604554167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ddcf3bc05ae7a4596420ad762cdde1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDistance: 100
