@@ -24,9 +24,11 @@ public class EditorSetPos : MonoBehaviour
 
         for (int i = 0; i < metaData.name.Length; i++) {
             string curr_name = metaData.name[i];
-            string curr_asset = metaData.map_asset[i];
+            string curr_asset = metaData.map_asset[i].Split('.')[0];
             Vector3 pos = StringToVec(metaData.pos[i]);
+            pos = new Vector3(-pos[0], pos[1], pos[2]);
             Vector3 rot = StringToVec(metaData.rot[i]);
+            rot = new Vector3(rot[0], -rot[1], rot[2]);
             Vector3 scale = StringToVec(metaData.scale[i]);
 
             GameObject curr_spawner = Instantiate(objectSpawner, this.transform);
