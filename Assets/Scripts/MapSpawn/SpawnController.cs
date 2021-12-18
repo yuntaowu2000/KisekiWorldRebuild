@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnController : MonoBehaviour
 {
     [SerializeField] float maxDistance = 100f;
+    [SerializeField] Transform centerPosition;
     ObjectSpawn[] spawners;
     Transform playerTransform;
     bool spawned = false;
@@ -18,7 +19,7 @@ public class SpawnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(playerTransform.position, this.transform.position);
+        float distance = Vector3.Distance(playerTransform.position, centerPosition.position);
         if (!spawned && distance <= maxDistance) {
             foreach (ObjectSpawn sp in spawners) {
                 sp.Spawn();
