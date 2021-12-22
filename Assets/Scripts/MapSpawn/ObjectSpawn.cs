@@ -10,6 +10,7 @@ public class ObjectSpawn : MonoBehaviour
 
     public void Spawn() {
         GameObject obj = Resources.Load<GameObject>(string.Format("Models/{0}", map_asset));
+        if (obj == null) return;
         instantiatedObj = Instantiate(obj, this.transform);
     }
 

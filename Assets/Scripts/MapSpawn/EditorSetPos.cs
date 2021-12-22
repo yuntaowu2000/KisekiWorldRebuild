@@ -5,7 +5,9 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class EditorSetPos : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private enum gameType {Sen, Kuro};
+    [SerializeField] private gameType type;
+    private string game = "";
     [SerializeField] private string jsonName = "";
     [SerializeField] private bool ready = false;
     [SerializeField] private bool finished = false;
@@ -20,16 +22,20 @@ public class EditorSetPos : MonoBehaviour
             return;
         }
         if (finished) return;
-        ObjectMetaData metaData = ImportJson<ObjectMetaData>(string.Format("Json/{0}", jsonName));
+        
+        game = (type == gameType.Sen) ? "sen" : "kuro";
 
-        for (int i = 0; i < metaData.name.Length; i++) {
-            string curr_name = metaData.name[i];
-            string curr_asset = metaData.map_asset[i].Split('.')[0];
-            Vector3 pos = StringToVec(metaData.pos[i]);
+        ObjectMetaDataCollection metaDataCollection = ImportJson<ObjectMetaDataCollection>(string.Format("Json/{0}/{1}", game,jsonName));
+        ObjectMetaData[] metaData = metaDataCollection.dataList;
+
+        for (int i = 0; i < metaData.Length; i++) {
+            string curr_name = metaData[i].name;
+            string curr_asset = string.Format("{0}/{1}", game, metaData[i].map_asset.Split('.')[0]);
+            Vector3 pos = StringToVec(metaData[i].pos);
             pos = new Vector3(-pos[0], pos[1], pos[2]);
-            Vector3 rot = StringToVec(metaData.rot[i]);
-            rot = new Vector3(rot[0], -rot[1], rot[2]);
-            Vector3 scale = StringToVec(metaData.scale[i]);
+            Vector3 rot = StringToVec(metaData[i].rot);
+            rot = new Vector3(rot[0] / Mathf.PI * 180, -rot[1] / Mathf.PI * 180, rot[2] / Mathf.PI * 180);
+            Vector3 scale = StringToVec(metaData[i].scale);
 
             GameObject curr_spawner = Instantiate(objectSpawner, this.transform);
             curr_spawner.name = curr_name;
@@ -51,6 +57,7 @@ public class EditorSetPos : MonoBehaviour
     public static T ImportJson<T>(string path)
     {
         TextAsset textAsset = Resources.Load<TextAsset>(path);
-        return JsonUtility.FromJson<T>(textAsset.text);
+        string finalizedStr = "{\"dataList\": " + textAsset.text + "}";
+        return JsonUtility.FromJson<T>(finalizedStr);
     }
 }
