@@ -8,7 +8,7 @@ public class SpawnController : MonoBehaviour
     [SerializeField] Transform centerPosition;
     ObjectSpawn[] spawners;
     Transform playerTransform;
-    bool spawned = false;
+    [SerializeField] bool spawned = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,22 +16,32 @@ public class SpawnController : MonoBehaviour
         playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
+    IEnumerator ChildrenSpawn() {
+        foreach (ObjectSpawn sp in spawners) {
+            sp.Spawn();
+            yield return null;
+        }
+    }
+
+    IEnumerator ChildrenDestroy() {
+        foreach (ObjectSpawn sp in spawners) {
+            sp.DestroyChild();
+            yield return null;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(playerTransform.position, centerPosition.position);
         if (!spawned && distance <= maxDistance) {
-            foreach (ObjectSpawn sp in spawners) {
-                sp.Spawn();
-            }
+            StartCoroutine(ChildrenSpawn());
             spawned = true;
             return;
         }
 
         if (spawned && distance > maxDistance) {
-            foreach (ObjectSpawn sp in spawners) {
-                sp.DestroyChild();
-            }
+            StartCoroutine(ChildrenDestroy());
             spawned = false;
             return;
         }
