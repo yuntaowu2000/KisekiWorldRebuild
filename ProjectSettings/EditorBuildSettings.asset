@@ -7,7 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Crossbell/NewCrossbell.unity
-    guid: b663829918a80b04c9ab0afbb6fbdd61
+    guid: 5e5fa21fdf1e93a4990d16094303af9e
   - enabled: 1
     path: Assets/Scenes/Liberl/Bose.unity
     guid: c752a6708125c0d499d563cd2e14b3a8
