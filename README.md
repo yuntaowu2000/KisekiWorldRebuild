@@ -41,8 +41,9 @@ This project reconnects cities in kiseki series with their surrounding highways 
 - Unity version 2020.1.15f1, should be compatible with newer version of Unity
 - [Unity new input system](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.html)
 - New Crossbell models can be downloaded [here](). Download and extract the `CityNew` folder into `Assets/models/Crossbell` and then start/restart Unity and import all models.
+  - If you want to build up the models in blender, you will need the json files and the blender python script included in the archive. Check this [repo](https://github.com/yuntaowu2000/trails-games-tools) for details.
 - **Note:** Most regions require a reconfiguration of player object due to the integration of [new Unity input system and controller](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-196526). However, if the base scene is New Crossbell and you add teleportation to other scenes, reconfiguration is not required.  
 
 ## Credits
 
-All models extracted from [kiseki games](https://falcom.co.jp/kiseki/) using code from [uyjulian](https://gist.github.com/uyjulian/6c590476819bf3bfde6fc78aa3765698)  
+All models extracted from [kiseki games](https://falcom.co.jp/kiseki/) using code from [uyjulian](https://gist.github.com/uyjulian/6c590476819bf3bfde6fc78aa3765698). My version of code is [here](https://github.com/yuntaowu2000/trails-games-tools/tree/main/models).  

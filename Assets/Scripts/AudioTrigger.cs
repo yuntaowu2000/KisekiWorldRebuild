@@ -27,18 +27,10 @@ public class AudioTrigger : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        // if (other.gameObject.layer != LayerMask.NameToLayer("User")) return;
         if (other.gameObject.tag != "Player" 
         || audioClip == null
         || (audioSource.clip != null && audioSource.clip.name == audioClip.name)) return;
 
         StartCoroutine(PlayAudio());
     }
-
-    // private void OnTriggerStay(Collider other) {
-    //     if (other.gameObject.tag != "Player" 
-    //     || audioClip != null
-    //     || audioSource.clip.name == audioClip.name) return;
-    // }
-
 }

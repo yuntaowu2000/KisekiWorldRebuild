@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using StarterAssets;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
-using Kiseki.Core;
 using UnityEngine.InputSystem;
 
 namespace Kiseki.SceneManagement {
