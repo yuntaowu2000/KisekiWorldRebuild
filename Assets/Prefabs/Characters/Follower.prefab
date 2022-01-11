@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4397104633800630638}
   - component: {fileID: 4397104633800630636}
   - component: {fileID: 4397104633800630637}
-  - component: {fileID: 4397104633800630639}
   m_Layer: 0
   m_Name: Follower
   m_TagString: Untagged
@@ -84,17 +83,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c636e12dd641947a126dc83fec095e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!136 &4397104633800630639
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4397104633800630635}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
