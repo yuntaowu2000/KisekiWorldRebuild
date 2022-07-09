@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a1f42f45a2cea42ba76d1c97524f3f, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 4186465313001088229}
+  - {fileID: 7783371931251761569}
+  - {fileID: 1804885338216644141}
+  - {fileID: 8986665241959712744}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1804885338216644141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: 8cccb723-6dd6-4701-9077-15dad2f8a300
+  m_EditorClassIdentifier: 
+  text: "\u5BF9\u8BDD3"
+  children:
+  - b81efeb1-a592-4548-bd99-d7091908a172
+  rect:
+    serializedVersion: 2
+    x: 502
+    y: 102
+    width: 200
+    height: 150
+  speaker: Rufus
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4186465313001088229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: 3b95e8c8-6073-4b8b-b36b-4f813c88d4f4
+  m_EditorClassIdentifier: 
+  text: "\u5BF9\u8BDD1"
+  children:
+  - 60d97f26-2d69-4a30-9e22-c580aa522cf0
+  rect:
+    serializedVersion: 2
+    x: 10
+    y: 109
+    width: 200
+    height: 150
+  speaker: Rufus
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7783371931251761569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: 60d97f26-2d69-4a30-9e22-c580aa522cf0
+  m_EditorClassIdentifier: 
+  text: "\u5BF9\u8BDD2"
+  children:
+  - 8cccb723-6dd6-4701-9077-15dad2f8a300
+  rect:
+    serializedVersion: 2
+    x: 297
+    y: 86
+    width: 200
+    height: 150
+  speaker: NPC
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &8986665241959712744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: b81efeb1-a592-4548-bd99-d7091908a172
+  m_EditorClassIdentifier: 
+  text: "\u5BF9\u8BDD4"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 751
+    y: 95
+    width: 200
+    height: 150
+  speaker: Rufus
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

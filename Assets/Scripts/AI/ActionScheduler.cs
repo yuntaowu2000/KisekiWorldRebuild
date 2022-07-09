@@ -4,6 +4,8 @@ public class ActionScheduler : MonoBehaviour
 {
     IAction currentAction;
 
+    public IAction CurrentAction => currentAction;
+
     public void StartAction(IAction action)
     {
         if (currentAction == action) return;

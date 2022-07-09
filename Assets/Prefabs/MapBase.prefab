@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8373958208604554160}
   m_RootOrder: 0
@@ -41,6 +42,7 @@ GameObject:
   - component: {fileID: 8373958208604554160}
   - component: {fileID: 8373958208604554161}
   - component: {fileID: 8014799623141213805}
+  - component: {fileID: 2200181319837058531}
   m_Layer: 0
   m_Name: MapBase
   m_TagString: Untagged
@@ -58,6 +60,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5016557847058373273}
   m_Father: {fileID: 0}
@@ -95,3 +98,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDistance: 100
   centerPosition: {fileID: 5016557847058373273}
+  spawned: 0
+--- !u!65 &2200181319837058531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373958208604554167}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 300, y: 1, z: 300}
+  m_Center: {x: -50, y: 0, z: -150}

@@ -91,8 +91,11 @@ namespace StarterAssets
 
 		private bool _hasAnimator;
 
+		public bool CanMove { get; set; }
+
 		private void Awake()
 		{
+			CanMove = true;
 			// get a reference to our main camera
 			if (_mainCamera == null)
 			{
@@ -117,9 +120,19 @@ namespace StarterAssets
 		{
 			_hasAnimator = TryGetComponent(out _animator);
 			
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+			if (CanMove)
+			{
+				JumpAndGravity();
+				GroundedCheck();
+				Move();
+			}
+			else if (_hasAnimator)
+			{
+				_animator.SetFloat(_animIDSpeed, 0);
+				_animator.SetFloat(_animIDMotionSpeed, 0);
+				_animator.SetBool(_animIDJump, false);
+				_animator.SetBool(_animIDFreeFall, false);
+			}
 		}
 
 		private void LateUpdate()

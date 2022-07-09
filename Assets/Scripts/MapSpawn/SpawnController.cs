@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class SpawnController : MonoBehaviour
 {
-    [SerializeField] float maxDistance = 100f;
-    [SerializeField] Transform centerPosition;
+    private const string k_PlayerTag = "Player";
     ObjectSpawn[] spawners;
-    Transform playerTransform;
-    [SerializeField] bool spawned = false;
-    // Start is called before the first frame update
+    
     void Start()
     {
         spawners = GetComponentsInChildren<ObjectSpawn>();
-        playerTransform = GameObject.FindWithTag("Player").transform;
     }
 
     IEnumerator ChildrenSpawn() {
@@ -30,20 +26,15 @@ public class SpawnController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        float distance = Vector3.Distance(playerTransform.position, centerPosition.position);
-        if (!spawned && distance <= maxDistance) {
-            StartCoroutine(ChildrenSpawn());
-            spawned = true;
-            return;
-        }
+        if (other.tag != k_PlayerTag) return;
+        StartCoroutine(ChildrenSpawn());
+    }
 
-        if (spawned && distance > maxDistance) {
-            StartCoroutine(ChildrenDestroy());
-            spawned = false;
-            return;
-        }
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag != k_PlayerTag) return;
+        StartCoroutine(ChildrenDestroy());
     }
 }
