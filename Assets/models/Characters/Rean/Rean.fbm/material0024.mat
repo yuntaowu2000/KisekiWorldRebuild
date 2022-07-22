@@ -1,0 +1,374 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: material0024
+  m_Shader: {fileID: 4800000, guid: 6e635f7af33588b4d9c71823ab13283d, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CartoonMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseMap2Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DiffuseMap3Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DuDvMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlareMap2Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlareMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HighlightMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 57e60f40d4c3f014cb9adcb2f64c5bb4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap2Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap3Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcculusionMap2Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcculusionMap3Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcculusionMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ProjectionMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap2Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMap3Sampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecularMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SphereMapSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Instancing: 0
+    - _AlphaThreshold: 0.5
+    - _BlendMulScale2: 0.001
+    - _BlendMulScale3: 0.001
+    - _BlendVertexColorAlphaEnabled: 0
+    - _BumpScale: 1
+    - _CartoonHilightEnabled: 0
+    - _CartoonShadingEnabled: 0
+    - _CastShadowsEnabled: 0
+    - _CastShadowsOnlyEnabled: 0
+    - _CubeMapFresnel: 0
+    - _CubeMapIntensity: 0
+    - _CubeMappingEnabled: 0
+    - _Culling: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _DuDvMappingEnabled: 0
+    - _EMVMapAsIBLEnabled: 0
+    - _EmissionMappingEnabled: 0
+    - _Factor: 0
+    - _FakeConstantSpecularEnabled: 0
+    - _FarClipDitherEnabled: 0
+    - _FlatAmbientEnabled: 0
+    - _FogColorAnimated: 0
+    - _FogEnabled: 0
+    - _FogRangeParametersAnimated: 0
+    - _FogRateClamp: 1
+    - _FogRateClampAnimated: 0
+    - _FogRatio: 0.5
+    - _FogRatioEnabled: 0
+    - _GameMaterialDiffuseAnimated: 0
+    - _GameMaterialEmissionAnimated: 0
+    - _GameMaterialID: 0
+    - _GlareHilightPassEnabled: 0
+    - _GlareIntensity: 0
+    - _GlareMappingEnabled: 0
+    - _GlobalAmbientColorAnimated: 0
+    - _GlobalMainLightClampFactor: 1.5
+    - _GlobalMainLightClampFactorAnimated: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0
+    - _GlossyReflections: 1
+    - _HalfLambertLightingEnabled: 0
+    - _HeightCamRate: 1
+    - _HeightCamRateAnimated: 0
+    - _HeightDepthBias: 1
+    - _HeightDepthBiasAnimated: 0
+    - _HeightFogRangeParametersAnimated: 0
+    - _HemiSphereAmbientAxisAnimated: 0
+    - _HemiSphereAmbientGndColorAnimated: 0
+    - _HemiSphereAmbientSkyColorAnimated: 0
+    - _HighlightIntensity: 2
+    - _MainLightColorAnimated: 0
+    - _Metallic: 0
+    - _Mode: 0
+    - _MultiUV2AdditiveBlendingEnabled: 0
+    - _MultiUV2Enabled: 0
+    - _MultiUV2FaceEnabled: 0
+    - _MultiUV2MultiplicativeBlendingEXEnabled: 0
+    - _MultiUV2MultiplicativeBlendingEnabled: 0
+    - _MultiUV2MultiplicativeBlendingLMEnabled: 0
+    - _MultiUV2NoDiffuseEnabled: 0
+    - _MultiUV2NormalMappingEnabled: 0
+    - _MultiUV2OcculusionMappingEnabled: 0
+    - _MultiUV2ShadowEnabled: 0
+    - _MultiUV2SpecularMappingEnabled: 0
+    - _MultiUV2TexCoordOffsetEnabled: 0
+    - _MultiUVAdditiveBlendingEnabled: 0
+    - _MultiUVEnabled: 0
+    - _MultiUVFaceEnabled: 0
+    - _MultiUVGlareMappingEnabled: 0
+    - _MultiUVMultiplicativeBlendingEXEnabled: 0
+    - _MultiUVMultiplicativeBlendingEnabled: 0
+    - _MultiUVMultiplicativeBlendingLMEnabled: 0
+    - _MultiUVNoDiffuseEnabled: 0
+    - _MultiUVNormalMappingEnabled: 0
+    - _MultiUVOcculusionMappingEnabled: 0
+    - _MultiUVShadowEnabled: 0
+    - _MultiUVSpecularMappingEnabled: 0
+    - _MultiUVTexCoordOffsetEnabled: 0
+    - _NoAllLightingEnabled: 0
+    - _NoMainLightShadingEnabled: 0
+    - _NormalMapDXT5LPEnabled: 0
+    - _NormalMapDXT5NMEnabled: 0
+    - _NormalMappingEnabled: 0
+    - _NothingEnabled: 0
+    - _OcclusionStrength: 1
+    - _OcculusionMappingEnabled: 0
+    - _Parallax: 0.02
+    - _ProjectionMappingEnabled: 0
+    - _ReceiveShadowsEnabled: 0
+    - _ReflectionFresnel: 0.5
+    - _ReflectionIntensity: 0.75
+    - _RimClampEnabled: 0
+    - _RimLightClampFactor: 1
+    - _RimLightingEnabled: 0
+    - _RimLitIntensity: 4
+    - _RimLitPower: 2
+    - _RimTransparencyEnabled: 0
+    - _ShaderOptimizerEnabled: 0
+    - _ShadowColorShiftEnabled: 0
+    - _ShadowReceiveOffset: 0.75
+    - _Shininess: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularColorEnabled: 0
+    - _SpecularEnabled: 0
+    - _SpecularHighlights: 1
+    - _SpecularMappingEnabled: 0
+    - _SpecularPower: 50
+    - _SphereMapIntensity: 1
+    - _SphereMappingEnabled: 0
+    - _SrcBlend: 1
+    - _StencilCompareFunction: 8
+    - _StencilFailOp: 0
+    - _StencilPassOp: 0
+    - _StencilReadMask: 255
+    - _StencilRef: 0
+    - _StencilWriteMask: 255
+    - _StencilZFailOp: 0
+    - _TexcoordOffsetEnabled: 0
+    - _UVAEnabled: 0
+    - _UVSec: 0
+    - _Units: 0
+    - _UseDirectionalLightColorEnabled: 0
+    - _VertexColorEnabled: 0
+    - _WaterSurfaceEnabled: 0
+    - _WindyGrassEnabled: 0
+    - _WindyGrassHomogenity: 2
+    - _WindyGrassScale: 1
+    - _WindyGrassSpeed: 2
+    - _WindyGrassTexVEnabled: 0
+    - _ZTest: 4
+    - _ZWrite: 1
+    - m_end_CartoonHilight: 0
+    - m_end_CartoonShading: 0
+    - m_end_CubeMap: 0
+    - m_end_DuDvMap: 0
+    - m_end_EmissionMap: 0
+    - m_end_Fog: 1
+    - m_end_GameMaterial: 0
+    - m_end_GlareMap: 0
+    - m_end_HSA: 0
+    - m_end_MultiUV: 0
+    - m_end_MultiUV2: 0
+    - m_end_MultiUV2NormalMap: 0
+    - m_end_MultiUV2OcculusionMap: 0
+    - m_end_MultiUV2SpecularMap: 0
+    - m_end_MultiUVGlareMap: 0
+    - m_end_MultiUVNormalMap: 0
+    - m_end_MultiUVOcculusionMap: 0
+    - m_end_MultiUVSpecularMap: 0
+    - m_end_NormalMap: 0
+    - m_end_OcculusionMap: 0
+    - m_end_ProjectionMap: 0
+    - m_end_RimClamp: 0
+    - m_end_RimLighting: 0
+    - m_end_ShadowColorShift: 0
+    - m_end_SpecColor: 0
+    - m_end_Specular: 0
+    - m_end_SpecularMap: 0
+    - m_end_SphereMap: 0
+    - m_end_StencilOptions: 0
+    - m_end_UVA: 0
+    - m_end_WaterSurface: 0
+    - m_end_WindyGrass: 0
+    - m_start_CartoonHilight: 0
+    - m_start_CartoonShading: 0
+    - m_start_CubeMap: 0
+    - m_start_DuDvMap: 0
+    - m_start_EmissionMap: 0
+    - m_start_Fog: 0
+    - m_start_GameMaterial: 0
+    - m_start_GlareMap: 0
+    - m_start_HSA: 0
+    - m_start_MultiUV: 0
+    - m_start_MultiUV2: 0
+    - m_start_MultiUV2NormalMap: 0
+    - m_start_MultiUV2OcculusionMap: 0
+    - m_start_MultiUV2SpecularMap: 0
+    - m_start_MultiUVGlareMap: 0
+    - m_start_MultiUVNormalMap: 0
+    - m_start_MultiUVOcculusionMap: 0
+    - m_start_MultiUVSpecularMap: 0
+    - m_start_NormalMap: 0
+    - m_start_OcculusionMap: 0
+    - m_start_ProjectionMap: 0
+    - m_start_RimClamp: 0
+    - m_start_RimLighting: 0
+    - m_start_ShadowColorShift: 0
+    - m_start_SpecColor: 0
+    - m_start_Specular: 0
+    - m_start_SpecularMap: 0
+    - m_start_SphereMap: 0
+    - m_start_StencilOptions: 0
+    - m_start_UVA: 0
+    - m_start_WaterSurface: 0
+    - m_start_WindyGrass: 0
+    - shader_is_using_thry_editor: 0
+    - shader_master_label: 0
+    - shader_properties_label_file: 0
+    m_Colors:
+    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _DuDvMapImageSize: {r: 256, g: 256, b: 0, a: 0}
+    - _DuDvScale: {r: 4, g: 4, b: 0, a: 0}
+    - _DuDvScroll: {r: 1, g: 1, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _FogRangeParameters: {r: 10, g: 500, b: 0, a: 0}
+    - _GameMaterialDiffuse: {r: 1, g: 1, b: 1, a: 1}
+    - _GameMaterialEmission: {r: 0, g: 0, b: 0, a: 0}
+    - _GameMaterialTexcoord: {r: 0, g: 0, b: 1, a: 1}
+    - _GlobalAmbientColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _HeightFogRangeParameters: {r: 10, g: 500, b: 0, a: 0}
+    - _HemiSphereAmbientAxis: {r: 0, g: 1, b: 0, a: 0}
+    - _HemiSphereAmbientGndColor: {r: 0.333, g: 0.333, b: 0.333, a: 0}
+    - _HemiSphereAmbientSkyColor: {r: 0.667, g: 0.667, b: 0.667, a: 0}
+    - _HighlightColor: {r: 1, g: 1, b: 1, a: 0}
+    - _MainLightColor: {r: 1, g: 0.9568, b: 0.8392, a: 1}
+    - _ProjectionScale: {r: 1, g: 1, b: 0, a: 0}
+    - _ProjectionScroll: {r: 0, g: 0, b: 0, a: 0}
+    - _RimLitColor: {r: 1, g: 1, b: 1, a: 0}
+    - _ShadowColorShift: {r: 0.1, g: 0.02, b: 0.02, a: 0}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
+    - _TexCoordOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _TexCoordOffset2: {r: 0, g: 0, b: 0, a: 0}
+    - _TexCoordOffset3: {r: 0, g: 0, b: 0, a: 0}
+    - _UVaDuDvTexcoord: {r: 0, g: 0, b: 1, a: 1}
+    - _UVaMUv2Texcoord: {r: 0, g: 0, b: 1, a: 1}
+    - _UVaMUvColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UVaMUvTexcoord: {r: 0, g: 0, b: 1, a: 1}
+    - _UVaProjTexcoord: {r: 0, g: 0, b: 1, a: 1}
+    - _UserClipPlane: {r: 0, g: 1, b: 0, a: 0}
+    - _WindyGrassDirection: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

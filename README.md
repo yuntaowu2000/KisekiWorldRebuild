@@ -48,5 +48,7 @@ This project reconnects cities in kiseki series with their surrounding highways 
 
 All models extracted from [kiseki games](https://falcom.co.jp/kiseki/) using code from [uyjulian](https://gist.github.com/uyjulian/6c590476819bf3bfde6fc78aa3765698). My version of code is [here](https://github.com/yuntaowu2000/trails-games-tools/tree/main/models).  
 
+ED8 shader files from [PMONickpop123](https://github.com/PMONickpop123/ED8Shader).
+
 ## Warning
 Copyrights of models and musics belong to [Nihon Falcom Corporation](https://falcom.co.jp/). This work is associated with https://trails-game.com/. Commercial use is prohibited.
