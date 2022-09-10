@@ -35,10 +35,14 @@ This project reconnects cities in kiseki series with their surrounding highways 
   - Capital:
     - Trista town + Thors Academy
     - Heimdallr: central station + Vainqueur Street + Dreichels Plaza (Varflame Plaza), other regions do not fit due to sizes
-  - **Note:** Due to file sizes and processing time, other models from sen 3, 4 (West Erebonia) will not be included. Regional models can be viewed on [trails-Cafe](https://trails-game.com/regions/).
+  - **Note:** Due to file sizes and processing time, other models from sen 3, 4 (West Erebonia) will not be included. Regional models can be viewed on [trails-Cafe](https://trails-game.com/regions/).  
+- Calvard (Kuro)
+  - Ronlai
+  - Creil
+  - **Note:** There are rotation problems in model extraction and prefab instantiation. Models are temporarily not provided. This may cause prefab link errors in the project. Regional models can still be viewed at the same link as above.  
 
 ## Runtime/Build Requirements
-- Unity version 2020.1.15f1, should be compatible with newer version of Unity
+- Unity version 2022.1.6f1, should be compatible with Unity version starting 2020.1.15f1
 - [Unity new input system](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/manual/QuickStartGuide.html)
 - New Crossbell models can be downloaded [here](https://mega.nz/file/LxsCzZjQ#A1-umIKjQz6m_MEdh9hwMd_xlDLnPbmiIBjVGfgtKFg). Download and extract the `CityNew` folder into `Assets/models/Crossbell` and then start/restart Unity and import all models.
   - If you want to build up the models in blender, you will need the json files and the blender python script included in the archive. Check this [repo](https://github.com/yuntaowu2000/trails-games-tools) for details.

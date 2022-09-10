@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5711430602581226135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: a0c8066f-3018-4b2a-b5a7-5b8cb06d047f
+  m_EditorClassIdentifier: 
+  text: "\u597D\u591A\u65B0\u5947\u7684\u4E1C\u897F\uFF0C\u4F46\u8FD9\u4E9B\u4EBA\u5076\u8FD8\u662F\u6BD4\u4E0D\u4E0A\u6211\u5462~"
+  children:
+  - 97c03f2b-f478-454c-86be-d8b98355507d
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 1
+    width: 200
+    height: 150
+  speaker: "\u62C9\u78A7\u4E1D"
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a1f42f45a2cea42ba76d1c97524f3f, type: 3}
+  m_Name: lapis
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -5711430602581226135}
+  - {fileID: 5805724197362309515}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &5805724197362309515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: 97c03f2b-f478-454c-86be-d8b98355507d
+  m_EditorClassIdentifier: 
+  text: "\u5F85\u4F1A\u513F\u518D\u53BB\u697C\u4E0A\u5403\u70B9\u4E1C\u897F\u5427\uFF0C\u636E\u8BF4\u4E1C\u65B9\u6599\u7406\u5F88\u4E0D\u9519\u5462"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 250
+    y: 1
+    width: 200
+    height: 150
+  speaker: "\u62C9\u78A7\u4E1D"
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

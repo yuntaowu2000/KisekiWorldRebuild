@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-80125115772747760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: 425bd739-0a75-4895-8911-5832390900b5
+  m_EditorClassIdentifier: 
+  text: "\u4E70\u70B9\u4EC0\u4E48\u9001\u7ED9\u65AF\u9171\u597D\u5462~"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 26
+    y: 34
+    width: 200
+    height: 150
+  speaker: "\u5A1C\u72C4\u96C5"
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a1f42f45a2cea42ba76d1c97524f3f, type: 3}
+  m_Name: nadia
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -80125115772747760}
+  newNodeOffset: {x: 250, y: 0}

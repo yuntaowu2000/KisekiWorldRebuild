@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a1f42f45a2cea42ba76d1c97524f3f, type: 3}
+  m_Name: swin
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5665958965304947555}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &5665958965304947555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: bf9144e1-157f-486c-86dd-bdfa07861f83
+  m_EditorClassIdentifier: 
+  text: "\u770B\u8D77\u6765\u662F\u4E2A\u4E0D\u9519\u7684\u9493\u9C7C\u70B9\uFF0C\u9ECE\u6069\u5148\u751F\u8981\u6765\u4E00\u8D77\u9493\u9C7C\u5417\uFF1F"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 46
+    y: 63
+    width: 200
+    height: 150
+  speaker: "\u65AF\u6E29"
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

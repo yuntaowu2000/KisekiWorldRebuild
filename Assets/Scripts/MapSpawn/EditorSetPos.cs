@@ -17,7 +17,8 @@ public class EditorSetPos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!ready) {
+        if (!ready) 
+        {
             finished = false;
             return;
         }
@@ -28,19 +29,42 @@ public class EditorSetPos : MonoBehaviour
         ObjectMetaDataCollection metaDataCollection = ImportJson<ObjectMetaDataCollection>(string.Format("Json/{0}/{1}", game,jsonName));
         ObjectMetaData[] metaData = metaDataCollection.dataList;
 
-        for (int i = 0; i < metaData.Length; i++) {
+        for (int i = 0; i < metaData.Length; i++) 
+        {
             string curr_name = metaData[i].name;
             string curr_asset = string.Format("{0}/{1}", game, metaData[i].map_asset.Split('.')[0]);
             Vector3 pos = StringToVec(metaData[i].pos);
             pos = new Vector3(-pos[0], pos[1], pos[2]);
             Vector3 rot = StringToVec(metaData[i].rot);
-            rot = new Vector3(rot[0] / Mathf.PI * 180, -rot[1] / Mathf.PI * 180, rot[2] / Mathf.PI * 180);
+            if (type == gameType.Sen)
+            {
+                rot = new Vector3(rot[0] / Mathf.PI * 180, -rot[1] / Mathf.PI * 180, rot[2] / Mathf.PI * 180);
+            }
+            else
+            {
+                if (rot[0] * rot[2] < 0 && Mathf.Abs(Mathf.Abs(rot[0]) - 180f) < 5f && Mathf.Abs(Mathf.Abs(rot[2]) - 180f) < 5f)
+                {
+                    rot = new Vector3(0f, 180.0f + rot[1], 0f);
+                }
+                else if (Mathf.Abs(Mathf.Abs(rot[0]) - 180f) < 5f && Mathf.Abs(Mathf.Abs(rot[2]) - 180f) < 5f)
+                {
+                    rot = new Vector3(0f, -180.0f + rot[1], 0f);
+                }
+                else if (rot[0] < -90 && rot[2] < -90)
+                {
+                    rot = new Vector3(rot[0], rot[1], rot[2]);
+                }
+                else
+                {
+                    rot = new Vector3(rot[0], -rot[1], rot[2]);
+                }
+            }
             Vector3 scale = StringToVec(metaData[i].scale);
 
             GameObject curr_spawner = Instantiate(objectSpawner, this.transform);
             curr_spawner.name = curr_name;
             curr_spawner.transform.localPosition = pos;
-            curr_spawner.transform.localRotation = Quaternion.Euler(rot);
+            curr_spawner.transform.localEulerAngles = rot;
             curr_spawner.transform.localScale = scale;
 
             ObjectSpawn objsp = curr_spawner.GetComponent<ObjectSpawn>();

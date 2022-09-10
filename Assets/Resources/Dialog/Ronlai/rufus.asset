@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a1f42f45a2cea42ba76d1c97524f3f, type: 3}
+  m_Name: rufus
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1154085689677956769}
+  - {fileID: 2799665693111313556}
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &1154085689677956769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: ad0ee14f-fd3c-46b9-9ac6-a2d9a7257437
+  m_EditorClassIdentifier: 
+  text: "\uFF08\u770B\u8D77\u6765\u5361\u5C14\u74E6\u5FB7\u4E5F\u8981\u53D1\u751F\u4E00\u4E9B\u4E8B\u60C5\u4E86\uFF0C\u6211\u4F1A\u7559\u5728\u8FD9\u91CC\u7EE7\u7EED\u89C2\u5BDF\uFF09"
+  children:
+  - 013ef12d-09f4-4647-ae73-d4471e86ce74
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 2
+    width: 200
+    height: 150
+  speaker: "\u5362\u6CD5\u65AF"
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2799665693111313556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37cd17b197719424f92b873707580f72, type: 3}
+  m_Name: 013ef12d-09f4-4647-ae73-d4471e86ce74
+  m_EditorClassIdentifier: 
+  text: "\uFF08\u770B\u8D77\u6765\u5728\u548C\u4EC0\u4E48\u4EBA\u901A\u8BDD\uFF0C\u867D\u7136\u6709\u4E9B\u5728\u610F\uFF0C\u8FC7\u4E00\u4F1A\u513F\u518D\u6765\u804A\u804A\u5427\uFF09"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 250
+    y: 2
+    width: 200
+    height: 150
+  speaker: "\u9ECE\u6069"
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
